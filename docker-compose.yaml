@@ -1,5 +1,6 @@
 services:
   formbuilder:
+    container_name: "formbuilder"
     image: ngx-openmrs-formbuilder
     ports:
       - "4200:80"
