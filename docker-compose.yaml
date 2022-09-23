@@ -1,6 +1,6 @@
 services:
   formbuilder: 
-    image: ngx-openmrs-formbuilder:
+    image: ngx-openmrs-ohri-formbuilder:1.4
     ports:
       - "4200:80"
     environment:
