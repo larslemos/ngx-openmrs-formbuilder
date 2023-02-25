@@ -1,7 +1,8 @@
 {
-    "/api/*": {
-        "target": "http://localhost:3000",
-        "secure": false,
-        "logLevel": "debug"
-    }
+  "/openmrs/*": {
+    "target": "https://openmrs-formbuilder.globalhealthapp.net",
+    "secure": false,
+    "changeOrigin": false,
+    "logLevel": "debug"
+  }
 }
