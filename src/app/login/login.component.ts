@@ -19,7 +19,12 @@ export class LoginComponent implements OnInit {
   selectedValue: string;
   message: string;
   selectedBaseUrl = '';
-  baseUrls: string[] = ['Enter a custom URL', 'https://ngx.ampath.or.ke/amrs', 'https://ohri-dev.globalhealthapp.net/openmrs'];
+  baseUrls: string[] = [
+    'Enter a custom URL',
+    ,
+    'https://ohri-dev.globalhealthapp.net/openmrs',
+    'https://ethiohri-dev.globalhealthapp.net/openmrs/'
+  ];
 
   ngOnInit() {}
 
