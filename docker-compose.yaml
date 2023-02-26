@@ -1,8 +1,11 @@
-version: "3.3"
+version: '3.3'
 services:
-  formbuilder: 
-    image: histacoohri/ngx-openmrs-ohri-formbuilder:1.6
+  formbuilder:
+    image: histacoohri/ngx-openmrs-ohri-formbuilder:0.5
     ports:
-      - "4200:80"
+      - '4200:80'
     environment:
       - OPENMRS_HOST_URL=https://172.17.0.1
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:8080/openmrs']
+      timeout: 5s
