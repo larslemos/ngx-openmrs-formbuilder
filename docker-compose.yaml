@@ -2,6 +2,7 @@ version: '3.3'
 services:
   formbuilder:
     image: histacoohri/ngx-openmrs-ohri-formbuilder:0.5
+    platform: linux/amd64
     ports:
       - '4200:80'
     environment:
