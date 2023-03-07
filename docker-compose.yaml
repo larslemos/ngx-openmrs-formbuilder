@@ -1,8 +1,11 @@
 version: '3.3'
 services:
   formbuilder:
-    image: histacoohri/ngx-openmrs-ohri-formbuilder-arm64:0.6.1
-    platform: linux/amd64
+    image: histacoohri/ngx-openmrs-ohri-formbuilder:0.6.2
+    x-bake:
+      platforms:
+        - linux/amd64
+        - linux/arm64
     ports:
       - '4200:80'
     environment:
